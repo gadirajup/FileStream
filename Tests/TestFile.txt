@@ -1,0 +1,9 @@
+charmander
+charmeleon
+charizard
+bulbasaur
+ivysaur
+venusaur
+squirtle
+wartortle
+blastoise
