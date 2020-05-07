@@ -15,7 +15,7 @@ public class FileStream  {
     
     // MARK: - Lifecycle
     
-    init(path: String, delimiter: String = "\n", encoding: String.Encoding = .utf8, chunkSize: Int = 4096) throws {
+    public init(path: String, delimiter: String = "\n", encoding: String.Encoding = .utf8, chunkSize: Int = 4096) throws {
     
         guard let fileHandle = FileHandle(forReadingAtPath: path) else { throw FileStreamError.UnableToOpenFile }
         guard let delimData = delimiter.data(using: encoding) else { throw FileStreamError.BadDelimiter }
